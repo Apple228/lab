@@ -3,9 +3,14 @@ using namespace std;
 
 TSet::TSet(int mp) : MaxPower(mp), BitField(mp) {}
 
-TSet::TSet(const TSet& s) : MaxPower(s.MaxPower), BitField(s.BitField) {}
+TSet::TSet(const TSet& s) : MaxPower(s.MaxPower), BitField(s.BitField)  {}
 
 TSet::TSet(const TBitField& bf) : MaxPower(bf.GetLenght()), BitField(bf) {}
+
+int TSet::GetpMem2(void) const {
+    return  BitField.GetpMem();
+}
+
 
 TSet :: operator TBitField() {
     TBitField temp(this->BitField);

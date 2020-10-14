@@ -16,7 +16,7 @@ public:
 	void InsElem(const int n);
 	void DelElem(const int n);
 	int IsMember(const int n) const;
-
+	int GetpMem2(void) const;
 	int operator==(const TSet& s);
 	TSet& operator=(const TSet& s);
 	TSet operator+ (const int n);

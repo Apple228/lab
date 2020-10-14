@@ -16,7 +16,7 @@ public:
 	TBitField(int len);
 	TBitField(const TBitField& b);
 	~TBitField();
-
+	int GetpMem(void) const;
 	int GetLenght(void) const;
 	void SetBit(const int n);
 	void ClrBit(const int n);

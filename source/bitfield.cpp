@@ -7,6 +7,10 @@ TBitField::TBitField(int len) : BitLen(len) {
 	if (pMem != NULL)
 		for (int i = 0; i < MemLen; i++) pMem[i] = 0;
 }
+int TBitField::GetpMem(void) const  {
+	
+	return MemLen;
+}
 
 TBitField::TBitField(const TBitField& bf) {
 	BitLen = bf.BitLen;
@@ -110,6 +114,6 @@ iostream& operator>>(iostream& istr, TBitField& bf) {
 ostream& operator<<(ostream& ostr, const TBitField& bf) {
 	int len = bf.GetLenght();
 	for (int i = 0; i < len; i++)
-		if (bf.GetBit(i)) ostr << '1'; else ostr << '1';
+		if (bf.GetBit(i)) ostr << '1'; else ostr << '0';
 	return ostr;
 }
