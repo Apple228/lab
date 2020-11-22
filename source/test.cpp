@@ -8,10 +8,16 @@ using namespace std;
 
 int main() {
 	setlocale(NULL, "RUS");
+	TSet s = 33;
+	int size=0;
+	int n = 0;
+	n = s.GetMaxPower();
+	size = s.GetpMem2();
+	cout << n << " elem" << endl;
+	cout << size << " byte" << endl;
 	
 	
-	
-	int n, m, k, count;
+	/*int n, m, k, count;
 	cout << "Тестирование программ поддержки понятия множества" << endl;
 	cout << "              Решето Эратосфена" << endl;
 	cout << "Введите верхню границу целых значений - ";
@@ -34,5 +40,5 @@ int main() {
 		}
 	cout << endl;
 	cout << "В первых " << n << " числах " << count << " простых" << endl;
-	return 0;
+	return 0;*/
 }
